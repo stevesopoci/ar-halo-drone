@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="ARHaloDrone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yhd-fW-AKr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1S-UW-5bj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSh-9h-F5a" userLabel="TurnLeftButton">
+                                <rect key="frame" x="150" y="788" width="88" height="85"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrowtriangle.left.circle" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="75" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="turnLeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVw-Vz-jdS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQS-Jh-Wll" userLabel="TurnRightButton">
+                                <rect key="frame" x="306" y="788" width="88" height="85"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrowtriangle.right.circle" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="75" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="turnRightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBP-uc-w4y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YL-c4-uB3" userLabel="MoveForwardButton">
+                                <rect key="frame" x="228" y="788" width="88" height="85"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrowtriangle.up.circle" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="75" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveForwardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1po-rg-kOo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-NR-pHk" userLabel="MoveUpButton">
+                                <rect key="frame" x="6" y="709" width="88" height="85"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="plus.circle" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="75" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9LX-vN-lhq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAa-kt-Nd1" userLabel="MoveDownButton">
+                                <rect key="frame" x="6" y="788" width="88" height="85"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="minus.circle" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="75" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveDownButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="owP-aK-lWC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JUp-6v-Ixh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2YL-c4-uB3" secondAttribute="bottom" constant="23" id="1RW-E3-yDR"/>
+                            <constraint firstItem="h1S-UW-5bj" firstAttribute="leading" secondItem="JUp-6v-Ixh" secondAttribute="leading" id="4VP-fz-RgC"/>
+                            <constraint firstItem="JUp-6v-Ixh" firstAttribute="trailing" secondItem="CQS-Jh-Wll" secondAttribute="trailing" constant="20" id="733-dv-7s4"/>
+                            <constraint firstItem="h1S-UW-5bj" firstAttribute="top" secondItem="Yhd-fW-AKr" secondAttribute="top" id="9Ic-h7-v3R"/>
+                            <constraint firstItem="wAa-kt-Nd1" firstAttribute="leading" secondItem="JUp-6v-Ixh" secondAttribute="leading" constant="6" id="Eff-xH-Zdq"/>
+                            <constraint firstItem="wAa-kt-Nd1" firstAttribute="top" secondItem="fTc-NR-pHk" secondAttribute="bottom" constant="-6" id="P6i-Vq-H4o"/>
+                            <constraint firstItem="fTc-NR-pHk" firstAttribute="leading" secondItem="JUp-6v-Ixh" secondAttribute="leading" constant="6" id="e7D-SV-DOL"/>
+                            <constraint firstItem="CQS-Jh-Wll" firstAttribute="leading" secondItem="2YL-c4-uB3" secondAttribute="trailing" constant="-10" id="ecr-QQ-tQu"/>
+                            <constraint firstAttribute="bottom" secondItem="CQS-Jh-Wll" secondAttribute="bottom" constant="23" id="hjt-D8-aEp"/>
+                            <constraint firstAttribute="bottom" secondItem="rSh-9h-F5a" secondAttribute="bottom" constant="23" id="iIJ-Ml-SgD"/>
+                            <constraint firstItem="2YL-c4-uB3" firstAttribute="leading" secondItem="rSh-9h-F5a" secondAttribute="trailing" constant="-10" id="nGv-rb-1Zg"/>
+                            <constraint firstItem="h1S-UW-5bj" firstAttribute="trailing" secondItem="JUp-6v-Ixh" secondAttribute="trailing" id="tZJ-Em-KMe"/>
+                            <constraint firstAttribute="bottom" secondItem="h1S-UW-5bj" secondAttribute="bottom" id="xh8-An-RIa"/>
+                            <constraint firstAttribute="bottom" secondItem="wAa-kt-Nd1" secondAttribute="bottom" constant="23" id="z3D-qA-TWN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="h1S-UW-5bj" id="Lsb-Xi-O9H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowtriangle.left.circle" catalog="system" width="128" height="121"/>
+        <image name="arrowtriangle.right.circle" catalog="system" width="128" height="121"/>
+        <image name="arrowtriangle.up.circle" catalog="system" width="128" height="121"/>
+        <image name="minus.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
