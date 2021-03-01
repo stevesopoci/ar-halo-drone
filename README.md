@@ -1,7 +1,5 @@
 # ar-halo-drone
 
-ARHaloDrone is a native iOS augmented reality prototype written in Swift that demonstrates the power of RealityKit and Reality Composer by anchoring a spartan with their personal conceptual drone to the real world. Users 
-can control the spartan's conceptual drone with ability to move in any direciton. The intention of this project was to showcase in augmented reality the conceptual 
-idea for spartan's to have personal drones that can fly around the map to find and report the locations of enemies. 
+ARHaloDrone is a native iOS augmented reality prototype written in Swift that demonstrates the power of RealityKit and Reality Composer by anchoring a spartan with their personal, conceptual enemy finding drone to the real world. Using on screen controllers, users have the ability to move the drone in any direciton including up and down.
 
-For a quick demonstration of `ARHaloDrone`, navigate to this YouTube [link]().
+To see `ARHaloDrone` in action, you can navigate to a quick demonstration on [YouTube]().
